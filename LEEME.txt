@@ -1,0 +1,5 @@
+Forrajes LLOCEE · app instalable (PWA)
+Versión 202611181831
+
+Esta carpeta es la app completa. Se publica tal cual (por ejemplo en GitHub Pages).
+Los datos van cifrados con el PIN del establo. Para actualizar: node build.js, node armar.js y node armar-pwa.js en la carpeta _motor, y volver a subir esta carpeta.
