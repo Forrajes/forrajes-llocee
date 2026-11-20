@@ -1,5 +1,5 @@
-// Forrajes LLOCEE · funcionamiento sin internet. Versión 202611192226
-const CACHE = 'forrajes-llocee-202611192226';
+// Forrajes LLOCEE · funcionamiento sin internet. Versión 202611202117
+const CACHE = 'forrajes-llocee-202611202117';
 const ARCHIVOS = ["index.html","manifest.webmanifest","icons/apple-touch-icon.png","icons/favicon-32.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","lib/chart.umd.min.js","lib/html2canvas.min.js","lib/jspdf.plugin.autotable.min.js","lib/jspdf.umd.min.js","lib/qrious.min.js","lib/xlsx.full.min.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ARCHIVOS)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
